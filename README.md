@@ -1,6 +1,8 @@
 ASI
 ======
 
+21.10.2012: Praca nad fortunką. Czemu mam 'Internal Server Error' ?
+
 18.10.2012: Dodanie fortunki do repozytorium.
 
 17.10.2012: Jestem w trakcie rewolucji systemowych na moim sprzęcie. W ciągu kilku dni zacznę poważniej pracować nad fortunką.
