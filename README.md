@@ -1,6 +1,8 @@
 ASI
 ======
 
+14.11.2012: Praca nad projektem "Biblioteka". Fortunkę chyba opuszczam ;-)
+
 21.10.2012: Praca nad fortunką. Czemu mam 'Internal Server Error' ?
 
 18.10.2012: Dodanie fortunki do repozytorium.
