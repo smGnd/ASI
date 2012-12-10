@@ -1,0 +1,16 @@
+<%= simple_form_for @lib, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :cover %>
+  <%= f.input :author %>
+  <%= f.input :title %>
+  <%= f.input :isbn %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                libs_path, :class => 'btn' %>
+  </div>
+
+  In area "Cover" put an URL adress to cover in internal or external server.<br/>
+  In area "Author", please put ONLY FIRST LETTER of name, then point, space, and full last name.<br/>
+  In area "Title", please put an original title (e.g. Lord of the Rings, not "Der Herr der Ringe").<br/>
+  ISBN is a type of book's serial number.
+<% end %>
