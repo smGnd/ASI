@@ -1,6 +1,10 @@
 ASI
 ======
 
+18.12.2012: Dodanie logowania
+
+14.12.2012: Kontynuacja prac.
+
 07.12.2012: Dwa tygodnie do końca świata, może nie będę dalej robił? ;-) Zbudowałem rusztowanie biblioteki, jeszcze tylko logowanie i uatrakcyjnienie jej trochę...
 
 14.11.2012: GDZIE SIĘ ZMIENIA KOLORY BUTTONÓW!?
