@@ -16,13 +16,6 @@
 
   </head>
   <body>
-<!-- <%= render partial: 'shared/navbar' %> -->
-   <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <!-- Logowanie -->
-        </div>
-      </div>
-   </div>
    <br /><br /><br />
     <div class="container">
         <div class="row">
@@ -31,11 +24,21 @@
           </div>
           <div class="span3">
             <div class="well sidebar-nav">
-             <!-- <h3>Useful links</h3> -->
               <ul class="nav nav-list">
+		<li>
+		<% if current_user %>
+                    <%= link_to image_tag("sowt.gif", :alt => "Sing out with Twitter"), signout_path %>
+                  </li>
+                <% else %>
+                  <%= link_to image_tag("siwt.gif", :alt => "Sign in with Twitter"), "/auth/twitter" %>
+                <% end %>
+                </li>
+		<% if current_user %>
+                <li><%= link_to t('.new', :default => t("helpers.links.new")), new_lib_path %></li>
+                <% end %>
                 <li class="nav-header">Useful links</li>
                 <li><%= link_to "Empik", "http://empik.pl"  %></li>
-		<li><%= link_to t('.new', :default => t("helpers.links.new")), new_lib_path %></li>
+		<li><%= link_to "Amazon", "http://amazon.com" %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->

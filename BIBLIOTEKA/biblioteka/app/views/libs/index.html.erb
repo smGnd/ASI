@@ -9,7 +9,9 @@
       <th><%= model_class.human_attribute_name(:author) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:isbn) %></th>
+      <% if current_user %>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
@@ -19,6 +21,7 @@
         <td><%= lib.author %></td>
         <td><%= lib.title %></td>
         <td><%= lib.isbn %></td>
+        <% if current_user %>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_lib_path(lib), :class => 'btn btn-mini' %>
@@ -28,6 +31,7 @@
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-mini btn-danger' %>
         </td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

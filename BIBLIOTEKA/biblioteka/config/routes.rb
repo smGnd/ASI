@@ -1,6 +1,10 @@
 Biblioteka::Application.routes.draw do
   resources :libs
 
+match "/auth/:provider/callback" => "sessions#create"
+match "/signout" => "sessions#destroy", :as => :signout
+root :to => 'libs#index'
+
 
   resources :books
 
